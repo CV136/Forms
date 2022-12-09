@@ -30,11 +30,19 @@ confirmPassword.addEventListener('keyup', () => {
 
 let darkModeToggle = document.getElementById('toggle-darkmode')
 
-darkModeToggle.addEventListener('change', (event) => {
+/*darkModeToggle.addEventListener('change', (event) => {
     document.body.setAttribute("style", "background-color: black; color: white")
-}) //problem: can't change it back!
+}) //problem: can't change it back!*/
 
-
+darkModeToggle.addEventListener('change', () => {
+    if (darkModeToggle.value == "dark") {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    } else {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+    }
+})
 
 
 
