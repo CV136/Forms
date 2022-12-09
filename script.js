@@ -32,7 +32,7 @@ let darkModeToggle = document.getElementById('toggle-darkmode')
 
 darkModeToggle.addEventListener('change', (event) => {
     document.body.setAttribute("style", "background-color: black; color: white")
-})
+}) //problem: can't change it back!
 
 
 
